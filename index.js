@@ -33,7 +33,7 @@ conn.sync({ force: false }).then(async () => {
 
   console.log('Countries loaded to the database.');
 
-  server.listen(3001, () => {
+  server.listen(process.env.PORT || 3001, () => {
     console.log('listening at 3001'); // eslint-disable-line no-console
   });
 
